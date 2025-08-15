@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <title>Tabelas Avançadas e Multimídia</title>
     <style>
-
-        /* Começar digitação (Aqui) */
-  
+        table {
+           width: 50%; /* Largura de 50% */
+           border-collapse: collapse; /* Remove o espaçamento entre as bordas */
+           margin-bottom: 20px; /* Espaço inferior para separar da próxima seção */
+        }
+        th, td{
+            border: 1px dotted black;
+            padding: 8px; /* Espaçamento interno */
+        }
+        th {
+            background-color: #333; /* Cor de fundo */
+            color: white; /* Cor do texto */
+        }
+        tfoot {
+            background-color: #ffff99;
+            font-weight:bolder; /* Negrito */
+        }
+        td.num-right {
+            text-align: right; /* Alinha texto à direita */
+        }
     </style>
 </head>
 <body>
@@ -51,17 +68,30 @@
     
     <hr>
 
-    <!-- Continuar digitação (Aqui) -->
-
+    
     <!-- MULTIMÍDIA EM HTML5 -->
-
-
+      <h2>Inserindo vídeos locais</h2>
+      <video width="500" poster="assets/limoes-capa.png" controls>
+        <source src="assets/meu-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+      <br>
 
     <!-- Inserindo vídeos do YouTube -->
-    <!-- src="https://www.youtube.com/embed/eqUFcr1mI3Y" -->
+    <iframe widht="560" height="315"
+        src="https://www.youtube.com/embed/eqUFcr1mI3Y"
+        frameborder="0"
+        allow="accelerometer; autoplay"
+        allowfullscreen>
+    </iframe>
+    <br>
 
-
-    <!-- Reproduzir áudios  -->
+    
+   <!-- Reproduzir áudios  -->
+    <audio preload="metadata" autoplay controls>
+        <source src="assets/happy-mistake.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
 
   
 
